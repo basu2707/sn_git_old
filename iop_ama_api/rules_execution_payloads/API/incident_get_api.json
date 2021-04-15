@@ -1,0 +1,234 @@
+Response: {
+    "success": true,
+    "transaction_id": "a50d9d90-f6c3-11ea-ad05-0ef7401f9bcb",
+    "data": {
+        "inc": [
+            {
+                "affected_partners": "",
+                "alarm_notes": [],
+                "assigned_to": {
+                    "display_value": "Evanios Service Account  (ev_agent-t)",
+                    "value": "33459d406fb34300a83b2d232e3ee442",
+                    "user_name": "ev_agent-t"
+                },
+                "assignment_group": {
+                    "display_value": "TPX-RE-PLAT-ACCESSNET:NTL",
+                    "value": "8379dcd9db5a53004b1a5623dc961986",
+                    "group_id": "011554",
+                    "area_id": "AT10017"
+                },
+                "business_service": {
+                    "display_value": "RDK",
+                    "value": "9d43c9fedbe7df804b1a5623dc961983"
+                },
+                "caller_id": {
+                    "display_value": "Evanios Service Account  (ev_agent-t)",
+                    "value": "33459d406fb34300a83b2d232e3ee442",
+                    "user_name": "ev_agent-t"
+                },
+                "category": "HFC",
+                "cause_code": {
+                    "display_value": "Network – Unknown",
+                    "value": "200df996db461b009e6e01a3ca9619bd",
+                    "external_id": "1113"
+                },
+                "caused_by": "",
+                "closed_at": "",
+                "closed_by": "",
+                "close_code": "Cancelled by System",
+                "close_notes": "Event Monitoring Self Cleared",
+                "cmdb_ci": {
+                    "display_value": "MIAED02817",
+                    "value": "23158f621b348010be6dea866e4bcb74",
+                    "u_gl_code": "000118",
+                    "sys_class_name": "Endpoint",
+                    "type": "Fiber Node"
+                },
+                "comments": [],
+                "contact_type": "Monitoring",
+                "description": "For RPD MIAED02817 - With MAC address 00:20:a3:28:67:8b has been off-line for at least 1 minute.",
+                "external_system_name": "",
+                "external_ticket_unique_id": "",
+                "external_source_url": "https://tts-ticketviewer-v2-qa.u1.app.cloud.comcast.net/?ticketId=SI004689140",
+                "impacted_subscribers": "",
+                "integrated_systems": {
+                    "display_value": "Remedy TTS, Remedy TTS",
+                    "value": "aabe58576f460bc0a83b2d232e3ee4da,aabe58576f460bc0a83b2d232e3ee4da"
+                },
+                "knowledge": "false",
+                "mitigated": "2020-09-14 07:21:38",
+                "number": "INC001677501",
+                "opened_at": "2020-09-14 07:16:31",
+                "opened_by": {
+                    "display_value": "Evanios Service Account  (ev_agent-t)",
+                    "value": "33459d406fb34300a83b2d232e3ee442",
+                    "user_name": "ev_agent-t"
+                },
+                "owner": "",
+                "parent_incident": "",
+                "partner_urgency": "",
+                "priority": "4",
+                "priority_restoral": null,
+                "problem_id": "",
+                "resolved_at": "2020-09-14 07:37:30",
+                "resolved_by": {
+                    "display_value": "Evanios Service Account  (ev_agent-t)",
+                    "value": "33459d406fb34300a83b2d232e3ee442",
+                    "user_name": "ev_agent-t"
+                },
+                "resolving_partner": {
+                    "display_value": "Comcast",
+                    "value": "7bc334ff37514700ba0694c543990e76"
+                },
+                "rfc": "",
+                "scope": "National",
+                "service_affect": "outage",
+                "service_condition": "1",
+                "severity": "4",
+                "severity_scale": "",
+                "short_description": "VCMTS_RPDOffline",
+                "solution_code": {
+                    "display_value": "Alarm Self Cleared",
+                    "value": "370d71d2db461b009e6e01a3ca9619a5",
+                    "external_id": "2940"
+                },
+                "state": "6",
+                "started": "2020-09-14 07:16:31",
+                "subcategory": "Node",
+                "symptom": {
+                    "display_value": "Whole Node Outage",
+                    "value": "020b8b76db80f304efd59f67f4961914",
+                    "external_id": "10493"
+                },
+                "sys_id": "1056ecf41bdb90182d23beef034bcbd5",
+                "sys_updated_by": "ama_snow",
+                "sys_updated_on": "2020-09-14 20:23:29",
+                "triaged": "2020-09-14 07:16:31",
+                "tts_ticket_id": "SI004689140",
+                "tts_status": "success",
+                "watch_list": "",
+                "work_notes": [
+                    {
+                        "value": "EVNT161616898\n Short Description: VCMTS_RPDOffline\n Description: For RPD MIAED02817 - With MAC address 00:20:a3:28:67:8b has been off-line for at least 1 minute.",
+                        "posted_on": "2020-09-14 07:16:31",
+                        "posted_by_user_id": "ev_agent-t",
+                        "posted_by_name": "Evanios Service Account  (ev_agent-t)"
+                    },
+                    {
+                        "value": "EVNT161616898-VCMTS_RPDOffline-For RPD MIAED02817 - With MAC address 00:20:a3:28:67:8b has been off-line for at least 1 minute.  -- Avinash Test",
+                        "posted_on": "2020-09-14 07:16:31",
+                        "posted_by_user_id": "ev_agent-t",
+                        "posted_by_name": "Evanios Service Account  (ev_agent-t)"
+                    },
+                    {
+                        "value": "All events attached to this incident are closed. \nThe last event EVNT161616898 has also been closed so Mitigating the incident",
+                        "posted_on": "2020-09-14 07:21:38",
+                        "posted_by_user_id": "ev_agent-t",
+                        "posted_by_name": "Evanios Service Account  (ev_agent-t)"
+                    },
+                    {
+                        "value": "Resolving the Incident from Mitigate, as all the attached Active events were closed since last 15min.",
+                        "posted_on": "2020-09-14 07:37:30",
+                        "posted_by_user_id": "ev_agent-t",
+                        "posted_by_name": "Evanios Service Account  (ev_agent-t)"
+                    }
+                ],
+                "work_notes_list": "",
+                "error_category": " ",
+                "on_hold_reason": "",
+                "impacted_services": [
+                    {
+                        "cmdb_ci_service": "Legacy Devices",
+                        "service_condition": "1",
+                        "severity_scale": "",
+                        "description": "",
+                        "estimated_subcount": "",
+                        "service_name": "Legacy Devices",
+                        "service_class": "Residential",
+                        "external_service_name": "",
+                        "sys_id": "105620381bdb90182d23beef034bcb7a",
+                        "community": ""
+                    },
+                    {
+                        "cmdb_ci_service": "Video",
+                        "service_condition": "1",
+                        "severity_scale": "",
+                        "description": "",
+                        "estimated_subcount": "",
+                        "service_name": "Video",
+                        "service_class": "Residential",
+                        "external_service_name": "Video",
+                        "sys_id": "5c5620381bdb90182d23beef034bcb35",
+                        "community": ""
+                    },
+                    {
+                        "cmdb_ci_service": "Broadband",
+                        "service_condition": "1",
+                        "severity_scale": "",
+                        "description": "",
+                        "estimated_subcount": "",
+                        "service_name": "Broadband",
+                        "service_class": "Residential",
+                        "external_service_name": "",
+                        "sys_id": "685620381bdb90182d23beef034bcbb7",
+                        "community": ""
+                    },
+                    {
+                        "cmdb_ci_service": "RDK",
+                        "service_condition": "1",
+                        "severity_scale": "",
+                        "description": "",
+                        "estimated_subcount": "",
+                        "service_name": "RDK",
+                        "service_class": "Residential",
+                        "external_service_name": "",
+                        "sys_id": "ac5620381bdb90182d23beef034bcb7f",
+                        "community": ""
+                    },
+                    {
+                        "cmdb_ci_service": "Voice",
+                        "service_condition": "1",
+                        "severity_scale": "",
+                        "description": "",
+                        "estimated_subcount": "",
+                        "service_name": "Voice",
+                        "service_class": "Business",
+                        "external_service_name": "Voice",
+                        "sys_id": "d05620381bdb90182d23beef034bcb30",
+                        "community": ""
+                    }
+                ],
+                "affected_ci": [
+                    {
+                        "ci_item": "MIAED02817",
+                        "u_gl_code": "000118",
+                        "device_type": "",
+                        "sys_class_name": "Endpoint",
+                        "type": "Fiber Node",
+                        "sys_id": "105620381bdb90182d23beef034bcb25",
+                        "affected_system": [],
+                        "affected_market": []
+                    }
+                ],
+                "outages": [
+                    {
+                        "cmdb_ci": "MIAED02817",
+                        "type": "outage",
+                        "begin": "2020-09-14 07:16:31",
+                        "end": "2020-09-14 07:37:30",
+                        "sys_id": "1c5620381bdb90182d23beef034bcb2a",
+                        "affected_system": [],
+                        "affected_market": [],
+                        "u_gl_code": "000118"
+                    }
+                ],
+                "affected_account": [],
+                "affected_market": {
+                    "comcast_market": "National",
+                    "system_id": [],
+                    "market_id": []
+                }
+            }
+        ]
+    }
+}

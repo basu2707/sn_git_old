@@ -1,0 +1,1 @@
+answer = source.pre_activity_validation.toString().replace(/(?:\r\n|\r|\n)/g, '\n');

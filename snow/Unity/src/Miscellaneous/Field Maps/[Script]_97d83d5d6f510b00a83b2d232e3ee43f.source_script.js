@@ -1,0 +1,1 @@
+answer = source.justification.toString().replace(/(?:\r\n|\r|\n)/g, '\n'); 

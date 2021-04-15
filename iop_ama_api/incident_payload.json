@@ -1,0 +1,45 @@
+{
+ "payloadVersion": "V1",
+ "type" : "Change/Incident",
+ "eventType" : "insert/update/close/***",
+ "changeSource" : "IOP",
+ "data" : { 
+ }
+}
+ 
+// Schema For EventType
+ 
+// Incident Payload
+{
+ "details" : {
+ // ALL Details of incident 
+ },
+ "chnagedFields" : {
+ 
+ },
+ "actions" : {
+ 
+ "ttsBonding1" : "Yes",
+ "ttsBonding2" : "Yes",
+ "ttsBonding3" : "Yes",
+ "ttsBonding4" : "Yes",
+ "ttsBonding5" : "No",
+ "ttsBonding6" : "No",
+ "ttsBonding7" : "No",
+ "ttsBonding8" : "No"
+ }
+ 
+}
+ 
+{
+ "details" : {
+ // ALL Details of incident 
+ },
+ "chnagedFields" : {
+ 
+ },
+ "actions" : [{
+    "action" : "ttsBonding1",
+    "instruction" : ""
+ }]
+}

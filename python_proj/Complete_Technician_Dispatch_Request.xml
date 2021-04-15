@@ -1,0 +1,65 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dis="http://DispatchRequestService.ws.sams.cable.comcast.com/">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-13450526" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>Watchtower_NCD</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">j5hYa9tq8e4kPuZhsQhMSyzXguY=</wsse:Password>
+                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">Mzg4OTA2Mjk0Nw==</wsse:Nonce>
+                <wsu:Created>2017-08-14T17:45:01.000Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <dis:createDispatchRequest>
+            <arg0>
+                <Header>
+                    <Requester>Watchtower</Requester>
+                    <Submitter>
+                        <Type>Remedy</Type>
+                        <Value>Watchtower</Value>
+                    </Submitter>
+                    <TimeStamp>
+                        <Date>2017-08-14</Date>
+                        <Time>17:45:01</Time>
+                        <TimeZone>UTC</TimeZone>
+                    </TimeStamp>
+                    <TransactionId>83643821577762436454</TransactionId>
+                </Header>
+                <Body>
+                    <DispatchRequest>
+                        <TicketId>SI022225491</TicketId>
+                        <Technician>
+                            <TechnicianName>Xavier McCray</TechnicianName>
+                            <TechnicianNumber>null</TechnicianNumber>
+                        </Technician>
+                        <DispatchTime>
+                            <Date>2017-08-14</Date>
+                            <Time>15:23:22</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </DispatchTime>
+                        <AcknowledgedTime>
+                            <Date>2017-08-14</Date>
+                            <Time>15:45:00</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </AcknowledgedTime>
+                        <ScheduledApppointment>
+                            <Date>2017-08-14</Date>
+                            <Time>16:14:27</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </ScheduledApppointment>
+                        <TechnicianArrivalTime>
+                            <Date>2017-08-14</Date>
+                            <Time>16:14:28</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </TechnicianArrivalTime>
+                        <TechnicianStopTime>
+                            <Date>2017-08-14</Date>
+                            <Time>17:41:35</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </TechnicianStopTime>
+                    </DispatchRequest>
+                </Body>
+            </arg0>
+        </dis:createDispatchRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			class SNdbOps
+			{
+				//**************************************************************************
+				//**************************************************************************
+
+				static createGlideInstance (tableName, queryConditions, isAggregate)
+				{
+					//**********************************************************************
+					//this private function privateProcessOneCondition used only inside
+					//createGlideInstance function
+					//**********************************************************************
+					function privateProcessOneCondition (qryCondition, logicOper, glideRec,
+														glideCond)
+					{
+						var currOper = "=";
+						var currVal = null;
+						var currGlideCond = null;
+						for(let currField in qryCondition)
+						{
+							//process {"field1" : [">", iii]}
+							if (typeof qryCondition[currField] == 'object')
+							{
+								currOper = qryCondition[currField][0];
+								currVal = qryCondition[currField][1];
+							}
+							//process {"field2" : iii+2}
+							else
+							{
+								currVal = qryCondition[currField];
+							}
+							if (currVal === null)
+							{
+								currGlideCond = (currOper == "=" ?
+													glideRec.addNullQuery(currField) :
+													glideRec.addNotNullQuery(currField);
+								console.log ("Add--Null/NotNull--Query ==> " +
+											currField + " " + currOper + " " + currVal);
+							}
+							else
+							{
+								if(glideCond === null)
+								{
+									currGlideCond = 
+										glideRec.addQuery (currField, currOper, currVal);
+									console.log (Oper + " AddQuery ==> " +
+												currField + " " + currOper + " " + currVal);
+								}
+								else
+								{
+									currGlideCond =
+										(Oper == "OR" ?
+											glideCond.addOrCondition (currField, currOper, currVal) :
+											glideCond.addCondition (currField, currOper, currVal));
+									console.log (Oper + " AddAndOrQuery ==> " +
+												currField + " " + currOper + " " + currVal);
+								}
+							}
+						}
+						return currGlideCond;
+					}
+
+					//*************
+					//Function Body
+					//*************
+					var glideRec = (isAggregate ? new GlideRecord(tableName) : new GlideAggregate (tableName));
+					var glideQryCond = null;
+					if (typeof queryConditions == "string")
+					{
+						console.log("Processing encoded query")
+						glideRec.addEncodedQuery(queryConditions);
+					}
+					else if (typeof queryConditions == "object")
+					{
+						console.log("Processing non-encoded query")
+						var glideCond = null;
+						for(var ii = 0; ii < queryConditions.length; ii++)
+						{
+							if (typeof queryConditions[ii].length == 'undefined')
+							{
+								console.log("Processing non-array based conditions")
+								glideCond = privateProcessOneCondition (queryConditions[ii],
+																	"AND", glideRec, glideCond);
+							}
+							else
+							{
+								console.log("Processing array based conditions")
+								for (var jj = 1; jj < queryConditions[ii].length; jj++)
+								{
+									var Oper = queryConditions[ii][0];
+									glideCond = privateProcessOneCondition (queryConditions[ii][jj],
+																		Oper, glideRec, glideCond);
+								}
+							}
+						}
+					}
+					return glideRec;
+				}
+
+				//**************************************************************************
+				//**************************************************************************
+
+				static updateRows(tableName, queryConditions, updateFieldsAndVals)
+				{
+					var glideRec = SNdbOps.createGlideInstance(tableName,queryConditions, false);
+
+					if (typeof updateFieldsAndVals == "object")
+					{
+						for (let currProp in updateFieldsAndVals)
+						{
+							if (updateFieldsAndVals.hasOwnProperty(currProp))
+								glideRec.setValue(currProp, updateFieldsAndVals[currProp]);
+						}
+					}
+					else
+						throw new Error("Error Updating Table: " + tableName +"; No Fields to Update.");
+
+					glideRec.updateMultiple();
+				}
+
+				//**************************************************************************
+				//**************************************************************************
+
+				static deleteRows(tableName, queryConditions)
+				{
+					var glideRec = SNdbOps.createGlideInstance(tableName, queryConditions, false);
+					glideRec.query();
+					return glideRec.deleteMultiple();
+				}
+
+				//**************************************************************************
+				//**************************************************************************
+
+				static getAggregates (tableName, queryConditions, groupByColumn, aggregatesAndFields)
+				{
+					var glideAggRecObj = SNdbOps.createGlideInstance(tableName, queryConditions, true);
+
+					if (groupByColumn) glideAggRecObj.groupBy (groupByColumn);
+					for(let currField in aggregatesAndFields)
+					{
+						if (typeof aggregatesAndFields[currField] == "object")
+						{
+							for (var ii = 0; ii < aggregatesAndFields[currField].length; ii++)
+								glideAggRecObj.addAggregate (aggregatesAndFields[currField][ii], currField);
+						}
+						else
+							glideAggRecObj.addAggregate (aggregatesAndFields[currField], currField);
+					}
+					glideAggRecObj.query();
+					return glideAggRecObj;
+				}
+
+				//**************************************************************************
+				//{table1Name: {table1Filter}, table2Name: {table2Filter}},
+				//{"table1Name.table1Field" : "table2Name.table2Field",
+				//"table2Name.table2Field" : ["table4Name.table4Field", "table4Name.table4Field"] }]
+				//**************************************************************************
+
+				static getDataFromTables(tablesAndFilterConditions, tableJoinConditions)
+				{
+					var glideRecsObj = new Object();
+					var primaryGlideRec = null;
+					for (let currProp in tablesAndFilterConditions)
+					{
+						if (tablesAndFilterConditions.hasOwnProperty(currProp))
+						{
+							glideRecsObj[currProp] = SNdbOps.createGlideInstance(currProp,
+																	tablesAndFilterConditions[currProp],
+																	false);
+							if (primaryGlideRec === null)
+								primaryGlideRec = glideRecsObj[currProp];
+						}
+					}
+
+					if (tableJoinConditions)
+					{
+						for (let currProp in tableJoinConditions)
+						{
+							var currTableAndFieldNames = currProp.split(".");
+							var currGlideRec = glideRecsObj[currTableAndFieldNames[0]];
+
+							//if we are joining only one more table - we should be able to just send a string with table and field details
+							if (typeof tableJoinConditions[currProp] == "string")
+							{
+								var joinTableAndFieldNames = tableJoinConditions[currProp].split(".");
+								currGlideRec.addJoinQuery(joinTableAndFieldNames[0],
+															currTableAndFieldNames[1],
+															joinTableAndFieldNames[1]);
+							}
+							//If multiple tables are joined with a table - we should list them as an array
+							else
+							{
+								for (var ii = 0; ii < tableJoinConditions[currProp].length; ii++)
+								{
+									var joinTableAndFieldNames = tableJoinConditions[currProp][ii].split(".");
+									currGlideRec.addJoinQuery(joinTableAndFieldNames[0],
+																currTableAndFieldNames[1],
+																joinTableAndFieldNames[1]);
+								}
+							}
+						}
+					}
+					primaryGlideRec.query();
+					return primaryGlideRec;
+				}
+			}
+
+
+		</script>
+	</head>
+	<body>
+		<script>
+			var iii = 5;
+			//SNdbOps.getAggregates ("table1Name", { "a": iii, "b": ["<", "2"], "c": ["=", "3"] }, "groupByColumn11111", {"table1Field": ["GROUP_CONCAT", "MIN", "MAX"], "table2Field":"SUM"});
+			//SNdbOps.createGlideInstance("table1Name", { "a": iii, "b": ["<", iii+2], "c": ["=", iii+3]}, false);
+
+			SNdbOps.createGlideInstance111("table1Name",
+				[
+					{"field1": [">", iii], "field2":iii+2},
+					["OR", {"field3": [">", iii+3], "field4":iii+4}]
+				], false);
+
+			//SNdbOps.getDataFromTables({table1Name: { a: 1, b: ["<", 2], c: ["=", 3]}});
+			/*
+			SNdbOps.getDataFromTables(
+				{
+					table1Name: { a: 1, b: ["<", 2], c: ["=", 3] },
+					table2Name: { aa: [">", 1], bb: ["<", 2], cc: ["=", 3] },
+				},
+				{
+					"table1Name.table1Field": ["table2Name.table2Field","table3Name.table3Field"],
+					"table2Name.table2Field": "table3Name.table3Field"
+				}
+			);
+			*/
+		</script>
+	</body>
+</html>

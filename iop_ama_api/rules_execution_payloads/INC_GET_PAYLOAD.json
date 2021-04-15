@@ -1,0 +1,153 @@
+event:48a7a7d0-2058-11eb-8ed5-0ecf7cd92aab {
+    "transaction_id": "48a7a7d0-2058-11eb-8ed5-0ecf7cd92aab",
+    "applicationName": "ama-unity-sapi-stage",
+    "environment": "STAGE",
+    "timestamp": "2020-11-06T17:48:31.518Z",
+    "flowName": "ama-unity-sapi-main",
+    "payload": {
+      "success": true,
+      "transaction_id": "48a7a7d0-2058-11eb-8ed5-0ecf7cd92aab",
+      "data": {
+        "inc": [
+          {
+            "affected_partners": "",
+            "alarm_notes": [
+              
+            ],
+            "source": "NetIQ",
+            "updated_by_system": "IOP",
+            "assigned_to": "",
+            "assignment_group": {
+              "display_value": "TPX-RE-PLAT-CORE:NTL",
+              "value": "c5795cd9db5a53004b1a5623dc961942",
+              "group_id": "",
+              "area_id": ""
+            },
+            "business_service": "",
+            "caller_id": {
+              "display_value": "TTS ServiceNow (tts_snow)",
+              "value": "6b3303220f380f4091b65bd692050e3c",
+              "user_name": "tts_snow"
+            },
+            "category": "",
+            "cause_code": "",
+            "caused_by": "",
+            "closed_at": "",
+            "closed_by": "",
+            "close_code": "",
+            "close_notes": "",
+            "cmdb_ci": {
+              "display_value": "rur101.denver.co.denver.comcast.net | xe-0/0/23:3",
+              "value": "4345b4b81b8bff4045870e966e4bcb40",
+              "u_gl_code": "",
+              "sys_class_name": "Interface"
+            },
+            "comments": [
+              
+            ],
+            "contact_type": "Integration",
+            "description": "rur101.denver.co.denver.comcast.net_xe-0/0/23:3__interface_down",
+            "external_system_name": "",
+            "external_ticket_unique_id": "",
+            "external_source_url": "",
+            "impacted_subscribers": "",
+            "integrated_systems": {
+              "display_value": "Remedy TTS",
+              "value": "aabe58576f460bc0a83b2d232e3ee4da"
+            },
+            "knowledge": "false",
+            "mitigated": "",
+            "number": "INC001868318",
+            "opened_at": "2020-11-06 17:48:27",
+            "opened_by": {
+              "display_value": "TTS ServiceNow (tts_snow)",
+              "value": "6b3303220f380f4091b65bd692050e3c",
+              "user_name": "tts_snow"
+            },
+            "owner": "",
+            "parent_incident": "",
+            "partner_urgency": "",
+            "priority": "4",
+            "priority_restoral": null,
+            "problem_id": "",
+            "resolved_at": "",
+            "resolved_by": "",
+            "resolving_partner": {
+              "display_value": "Comcast",
+              "value": "7bc334ff37514700ba0694c543990e76"
+            },
+            "rfc": "",
+            "scope": "National",
+            "service_affect": "non outage",
+            "service_condition": "3",
+            "severity": "3",
+            "severity_scale": "",
+            "short_description": "rur101.denver.co.denver.comcast.net_xe-0/0/23:3__interface_down",
+            "solution_code": "",
+            "state": "-9",
+            "started": "2020-11-06 17:48:27",
+            "subcategory": "",
+            "symptom": "",
+            "sys_id": "f933f3b91b102010c9a0cbb62a4bcb15",
+            "sys_updated_by": "tts_snow",
+            "sys_updated_on": "2020-11-06 17:48:28",
+            "triaged": "2020-11-06 17:48:27",
+            "tts_ticket_id": "",
+            "tts_status": "pending",
+            "watch_list": "",
+            "work_notes": [
+              {
+                "value": "Issue Identified: interface_down\nEvent time: 2020-11-06T16:45:28Z[UTC]\nElements Count: 2\nInterface:  rur101.denver.co.denver.comcast.net_xe-0/0/23:3(68.87.247.123) | \nMessage:  rur101.denver.co.denver.comcast.net_xe-0/0/23:3(68.87.247.123) : {SNMP_TRAP_LINK_DOWN: ifIndex 684, ifAdminStatus up(1), ifOperStatus down(2), ifName xe-0/0/23:3 timestamp:2020-11-06T16:45:28Z[UTC]} | ",
+                "posted_on": "2020-11-06 17:48:27",
+                "posted_by_user_id": "tts_snow",
+                "posted_by_name": "TTS ServiceNow (tts_snow)"
+              },
+              {
+                "value": "Primary Service from external system not found in ServiceNow : Routing",
+                "posted_on": "2020-11-06 17:48:28",
+                "posted_by_user_id": "tts_snow",
+                "posted_by_name": "TTS ServiceNow (tts_snow)"
+              }
+            ],
+            "work_notes_list": "",
+            "error_category": null,
+            "on_hold_reason": "",
+            "impacted_services": [
+              
+            ],
+            "affected_ci": [
+              {
+                "ci_item": "rur101.denver.co.denver.comcast.net | xe-0/0/23:3",
+                "u_gl_code": "",
+                "device_type": "",
+                "sys_class_name": "Interface",
+                "type": "",
+                "sys_id": "7933bbb91b102010c9a0cbb62a4bcbc7",
+                "affected_system": [
+                  
+                ],
+                "affected_market": [
+                  
+                ]
+              }
+            ],
+            "outages": [
+              
+            ],
+            "affected_account": [
+              
+            ],
+            "affected_market": {
+              "comcast_market": "National",
+              "system_id": [
+                
+              ],
+              "market_id": [
+                
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }

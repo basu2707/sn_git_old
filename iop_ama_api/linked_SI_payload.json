@@ -1,0 +1,26 @@
+{
+    "type": "si_update_status",
+    "ticketId": "SI004508520",
+    "parentId": "SI004508523",
+    "status": "Linked",
+    "source": "ServiceNow",
+    "sourceReference": "**Watchtower Soaking Outage",
+    "IOPid": "INC001416725",
+    "problemCode": "10493",
+    "causeCode": "NA",
+    "solutionCode": "NA",
+    "affectedElementList": {
+        "affectedElements": [
+            {
+                "entryId": "OE007907896",
+                "elementName": "FLORDHC301",
+                "elementType": "Node Leg",
+                "status": "Cancelled",
+                "actualStart": "06/11/20 16:53:32 UTC",
+                "actualEnd": "NA",
+                "causeCode": "NA",
+                "solutionCode": "NA"
+            }
+        ]
+    }
+}

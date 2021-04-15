@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:createResponse xmlns:ns2="http://xml.comcast.com/sams/tts/affectedelement/v1_11">
+         <ns2:CreateAffectedElementResponse>
+            <Header>
+               <Status>0</Status>
+               <Message>success
+Action messages(s):
+-  Could not learn ARS User for submitter type='Remedy' and value='Watchtower' defaulting
+-  SI draft ticket created 'SI031166440'
+-  Affected element created 'OE088834171'
+-  Added impacted location 'MW1400.Region.Comcast'
+-  Added impacted location '000761.System.Comcast'
+-  Added impacted location 'DV003.Division.Comcast'
+-  Attribute.Label 'Customer Experience'  Created attribute for Label Customer Experience
+-  Attribute.Label 'Contact Info Department'  Created attribute for Label Contact Info Department
+-  Attribute.Label 'Contact Info Phone'  Created attribute for Label Contact Info Phone
+-  Attribute.Label 'Indicator City'  Created attribute for Label Indicator City
+-  Attribute.Label 'Indicator State'  Created attribute for Label Indicator State
+-  Created Worklog Entry: 00822717183 Subject: Text Data and-or ExamplesTicket Id: SI031166440
+-  Attribute.Label 'Soaking Outage'  Created attribute for Label Soaking Outage</Message>
+               <TimeStamp>
+                  <Date>2018-11-12</Date>
+                  <Time>20:32:07</Time>
+                  <TimeZone>UTC</TimeZone>
+               </TimeStamp>
+               <TransactionId>NationalWT-2018-11-1220:31:58</TransactionId>
+            </Header>
+            <Body>
+               <AffectedElementId>OE088834171</AffectedElementId>
+               <TicketId>SI031166440</TicketId>
+            </Body>
+         </ns2:CreateAffectedElementResponse>
+      </ns2:createResponse>
+   </S:Body>
+</S:Envelope>

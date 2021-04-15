@@ -1,0 +1,76 @@
+{
+    "requester_id": "RITM002-0224",
+    "requester_severity": "Critical",
+    "response_time": "2019-04-29 09:31:31,2019-04-29 13:31:31",
+    "service_requester": {
+        "organization": {
+            "business": "Comcast Cable",
+            "organization_name": " Comcast Cable",
+            "address": {
+                "address_type": "PRIMARY",
+                "geoaddress1": "NDC Potomac - 7059 South Potomac Street",
+                "city": "Centennial",
+                "region": "CO",
+                "postal_code": "80112-4029",
+                "timezone": "CST",
+                "country": "US",
+		        "location": [
+                    {
+                        "id": "",
+                        "type": ""
+                    }
+                ]
+            }
+        },
+        "person": {
+            "first_name": " Keith",
+            "last_name": "Kent",
+            "salutation": "Mr. ",
+            "title": "Title",
+            "contact_type": "LG=ENG",
+            "communication_mode": "PRIMARY_VOICE",
+            "address": {
+                "address_type": "PRIMARY",
+                "geoaddress1": "NDC Potomac - 7059 South Potomac Street",
+                "city": "Centennial",
+                "region": "CO",
+                "postal_code": "80112-4029",
+                "timezone": "CST",
+                "country": "US", 
+		        "location": [
+                    {
+                        "id": "",
+                        "type": ""
+                    }
+                ]
+            }
+        }
+    },
+    "aggrement": {
+        "contract_id": "",
+        "agreement_type": "SN=USE4348YY0;PN=NA"
+    },
+    "activity": [
+        {
+            "action_log": "Service_Incident Submission",
+            "local_date": "2019-04-29 09:31:31,2019-04-29 13:31:31",
+            "parameter_list": "Service_Incident:Create"
+        }
+    ],
+    "problem": {
+        "expression": {
+            "relation": "AND",
+            "statement": [
+                {
+                    "statement_role": "DESCRIPTION",
+                    "statement_text": "Fan failure on HP server"
+                },
+                {
+                    "statement_role": "TITLE",
+                    "statement_text": "Create the HP ticket for HP ProLiant DL360p Gen8"
+                }
+            ]
+        }
+    }
+}
+

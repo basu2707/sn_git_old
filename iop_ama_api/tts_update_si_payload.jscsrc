@@ -1,0 +1,32 @@
+{
+    "eventGUID": "659a9717-44a9-49c1-adfb-10f0caeb2951",
+    "eventKey": "083406453",
+    "eventName": "tts-si-update",
+    "creationTimeInMillis": "1593448105546",
+    "payload": {
+        "type": "si_update_status",
+        "ticketId": "SI004526894",
+        "parentId": null,
+        "status": "Resolved",
+        "source": "ServiceNow",
+        "sourceReference": "INC001462663",
+        "IOPid": "INC001462663",
+        "problemCode": "13718",
+        "causeCode": "1113",
+        "solutionCode": "2940",
+        "affectedElementList": {
+            "affectedElements": [
+                {
+                    "entryId": "OE007929718",
+                    "elementName": "billing-data-service",
+                    "elementType": "Application",
+                    "status": "Resolved",
+                    "actualStart": "06/29/20 16:05:59 UTC",
+                    "actualEnd": "06/29/20 16:27:30 UTC",
+                    "causeCode": "1113",
+                    "solutionCode": "2940"
+                }
+            ]
+        }
+    }
+}

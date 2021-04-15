@@ -1,0 +1,1 @@
+answer = source.implementation_plan.toString().replace(/(?:\r\n|\r|\n)/g, '\n');

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="retina_ama/mulesoft/ama-net-tools/src/main/java"/>
+	<classpathentry kind="src" path="retina_ama/mulesoft/common/log4j2-sns-appender/src/main/java"/>
+	<classpathentry kind="src" path="retina_ama/mulesoft/common/log4j2-sqs-appender/src/main/java"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

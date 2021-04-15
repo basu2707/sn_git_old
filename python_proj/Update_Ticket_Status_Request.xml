@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://xml.comcast.com/sams/tts/affectedelement/v1_11">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-58008643" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>Watchtower_NCD</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">lzf9sCpenIQIH+hh5C3uVSiz6TQ=</wsse:Password>
+                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">NTk2NzQ2NTU2Ng==</wsse:Nonce>
+                <wsu:Created>2019-01-29T17:41:01.000Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:update>
+            <v1:UpdateAffectedElement>
+                <Header>
+                    <Requester>Watchtower</Requester>
+                    <Submitter>
+                        <Type>Remedy</Type>
+                        <Value>Watchtower</Value>
+                    </Submitter>
+                    <TimeStamp>
+                        <Date>2019-01-29</Date>
+                        <Time>17:41:01</Time>
+                        <TimeZone>UTC</TimeZone>
+                    </TimeStamp>
+                    <TransactionId>50676274716827591613</TransactionId>
+                </Header>
+                <Body>
+                    <Action>Update</Action>
+                    <AffectedElement>
+                        <AffectedElementId>OE091102845</AffectedElementId>
+                        <Status>In
+
+    Progress</Status>
+                    </AffectedElement>
+                </Body>
+            </v1:UpdateAffectedElement>
+        </v1:update>
+    </soapenv:Body>
+</soapenv:Envelope>

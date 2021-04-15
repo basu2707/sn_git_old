@@ -1,0 +1,28 @@
+{
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#61a289",
+        "statusBar.foreground": "#15202b",
+        "activityBar.background": "#81b5a1",
+        "activityBar.foreground": "#15202b",
+        "activityBar.activeBackground": "#81b5a1",
+        "activityBar.activeBorder": "#875ea1",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#875ea1",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.border": "#61a289",
+        "statusBarItem.hoverBackground": "#4d836e",
+        "titleBar.activeBackground": "#61a289",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.border": "#61a289",
+        "titleBar.inactiveBackground": "#61a28999",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "now.instance.authentication.type": "",
+    "now.instance.user.name": "",
+    "now.instance.host.url": "",
+    "now.instance.OAuth.client.id": "",
+    "now.instance.user.password": "",
+    "now.instance.OAuth.client.secret": "",
+    "peacock.color": "#61a289",
+    "git.ignoreLimitWarning": true
+}

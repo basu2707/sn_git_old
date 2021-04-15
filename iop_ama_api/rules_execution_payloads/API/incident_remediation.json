@@ -1,0 +1,31 @@
+{
+    "event_for": "remediation",
+    "published_by": "IOP",
+    "event_creation_time": "",
+    "trace_id": "",
+    "data": {
+        "update_type": "CREATE/UPDATE",
+        "updated_fields": [
+            ""
+        ],
+        "remediation": {
+            "incident_number": "INC001297257",
+            "number": "REM0021492",
+            "configuration_item": "nwteqdb-ho-a1p.sys.comcast.net",
+            "type": "iop_remediation",
+            "remediation_type": "remediation",
+            "event": "EVNT158440894",
+            "result": "partial_remediation",
+            "result_type": "touchless",
+            "workflow": "",
+            "error": "connectivity",
+            "state": "executing",
+            "total_time": "0:0:0:0",
+            "message": "The pod status is in if loop and the output is , Succeeded",
+            "pre_remediation_assignment_group": "TPX-RE-EA-MON_APP:NTL",
+            "post_remediation_assignment_group": "TPX-RE-EA-MON_APP:NTL",
+            "event_attributes": "cnoc-dashboard_dotnet-core-3point1-sample,24.40.21.192,null",
+            "exception": "Exception during remediation run"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "*/system": true,
+        "system" : true,
+        "node_modules": true,
+        ".vscode": true,
+        "lib": true,
+        "tsconfig.json": true
+    },
+    "search.exclude": {
+        "*/system": true
+    },
+    "css.lint.emptyRules": "ignore",
+    "html.customData": [
+        "./lib/data/jelly_schema.json"
+    ],
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1D856D",
+        "statusBar.foreground": "#fff",
+        "activityBar.background": "#1D856D",
+        "activityBar.foreground": "#fff"
+    }
+}

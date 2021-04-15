@@ -1,0 +1,153 @@
+23:28:44.819     12/09/2020     Worker-0     [MuleRuntime].cpuLight.03: [ama-ttskafka-listener-proc-stage].tts-deflection-notif-receiver.CPU_LITE @29643307     DEBUG
+event:3084a5b0-3aa0-11eb-8a93-0aec833f6b97 {
+  "ciIdentifier": "OE008407296",
+  "elementName": "caampp105.sacramento.ca.ccal.comcast.net",
+  "ciType": "CMTS",
+  "iopId": "INC001961678",
+  "ticketId": "SI004930553",
+  "source": "ServiceNow",
+  "sourceReference": "INC001961678",
+  "deflectionStatus": "active",
+  "timestampMs": 1607574524768,
+  "bonding": false,
+  "movedToParentTicket": false
+}
+23:28:44.829     12/09/2020     Worker-0     [MuleRuntime].cpuLight.03: [ama-ttskafka-listener-proc-stage].tts-deflection-notif-receiver.CPU_LITE @29643307     DEBUG
+event:3084a5b0-3aa0-11eb-8a93-0aec833f6b97 3084a5b0-3aa0-11eb-8a93-0aec833f6b97 - {
+  "origin": "TTS",
+  "source": "TTS",
+  "type": "tts-si",
+  "data": {
+    "ciIdentifier": "OE008407296",
+    "elementName": "caampp105.sacramento.ca.ccal.comcast.net",
+    "ciType": "CMTS",
+    "iopId": "INC001961678",
+    "ticketId": "SI004930553",
+    "source": "ServiceNow",
+    "sourceReference": "INC001961678",
+    "deflectionStatus": "active",
+    "timestampMs": 1607574524768,
+    "bonding": false,
+    "movedToParentTicket": false,
+    "type": "tts-si-deflection"
+  }
+}
+23:29:04.877     12/09/2020     Worker-0     [MuleRuntime].cpuLight.01: [ama-ttskafka-listener-proc-stage].create-notif-receiver.CPU_LITE @5f848194     DEBUG
+event:3c7103f0-3aa0-11eb-8a93-0aec833f6b97 3c7103f0-3aa0-11eb-8a93-0aec833f6b97 - {
+  "origin": "TTS",
+  "source": "TTS",
+  "type": "tts-si",
+  "data": {
+    "eventGUID": "bbc27a00-7182-463b-90fc-0454ca1e7d82",
+    "eventKey": "088758898",
+    "eventName": "tts-si-create",
+    "creationTimeInMillis": "1607574544766",
+    "payload": {
+      "ticketId": "SI004930553",
+      "incidentScope": "Regional",
+      "created_at": "12/10/20 04:28:42 UTC",
+      "ETR": "12/10/20 08:28:45 UTC",
+      "nextAction": "INC001961678",
+      "serviceCondition": "Outage",
+      "severity": "Sev 4",
+      "status": "Ready To Work",
+      "source": "ServiceNow",
+      "sourceReference": "INC001961678",
+      "modified": "12/10/20 04:28:49 UTC",
+      "alarmStart": "12/10/20 04:28:23 UTC",
+      "ttrstart": "12/10/20 04:28:45 UTC",
+      "assignment": {
+        "supportArea": "National Technical Operations",
+        "regionId": "AT1000",
+        "regionName": "CALIFORNIA MARKET",
+        "assignee": null,
+        "queue": "Network: National CMTS",
+        "queue_id": "006962",
+        "assignedDate": "12/10/20 04:28:45 UTC"
+      },
+      "categorization": {
+        "problem": {
+          "code": "15222",
+          "description": "Chassis Failure",
+          "category": "RAN",
+          "subcategory": "vCMTS"
+        }
+      },
+      "affectedElementList": {
+        "affectedElements": [
+          {
+            "entryId": "OE008407296",
+            "elementName": "caampp105.sacramento.ca.ccal.comcast.net",
+            "elementType": "CMTS",
+            "status": "In Progress"
+          }
+        ]
+      },
+      "attributeList": {
+        "attributes": [
+          {
+            "attrLabel": "IOP_id",
+            "attrType": "Network",
+            "attrValue": "INC001961678",
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Detected By",
+            "attrType": "Network",
+            "attrValue": "email",
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Contact Info Department",
+            "attrType": "Network",
+            "attrValue": "TPX-RE-PLAT-ACCESSNET:NTL",
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Outage Description",
+            "attrType": "Network",
+            "attrValue": "testing only",
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Customer Experience",
+            "attrType": "Network",
+            "attrValue": null,
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Contact Info Phone",
+            "attrType": "Network",
+            "attrValue": null,
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Indicator City",
+            "attrType": "Network",
+            "attrValue": null,
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Indicator State",
+            "attrType": "Network",
+            "attrValue": null,
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Management Bridge",
+            "attrType": "Network",
+            "attrValue": null,
+            "createDate": "12/10/20 04:28:45 UTC"
+          },
+          {
+            "attrLabel": "Technical Bridge",
+            "attrType": "Network",
+            "attrValue": null,
+            "createDate": "12/10/20 04:28:45 UTC"
+          }
+        ]
+      }
+    },
+    "type": "tts-si-create"
+  }
+}

@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://xml.comcast.com/sams/tts/affectedelement/v1_11">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-16210671" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>Watchtower_NCD</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">SMmPL/WXc5mGaAYLmP9RKw5qaOM=</wsse:Password>
+                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">NTgzNDQxODE1Mg==</wsse:Nonce>
+                <wsu:Created>2019-01-01T00:25:09.000Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:update>
+            <v1:UpdateAffectedElement>
+                <Header>
+                    <Requester>Watchtower</Requester>
+                    <Submitter>
+                        <Type>Remedy</Type>
+                        <Value>Watchtower</Value>
+                    </Submitter>
+                    <TimeStamp>
+                        <Date>2019-01-01</Date>
+                        <Time>00:25:09</Time>
+                        <TimeZone>UTC</TimeZone>
+                    </TimeStamp>
+                    <TransactionId>33102218122972662169</TransactionId>
+                </Header>
+                <Body>
+                    <Action>Update</Action>
+                    <AffectedElement>
+                        <AffectedElementId>OE090069839</AffectedElementId>
+                        <EstimatedTimeToResolve>
+                            <Date>2019-01-01</Date>
+                            <Time>04:25:08</Time>
+                            <TimeZone>GMT</TimeZone>
+                        </EstimatedTimeToResolve>
+                    </AffectedElement>
+                </Body>
+            </v1:UpdateAffectedElement>
+        </v1:update>
+    </soapenv:Body>
+</soapenv:Envelope>

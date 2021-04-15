@@ -1,0 +1,114 @@
+https: //ama-mq-sapi-test.us-e1.cloudhub.io:443/api/v1/messages
+Requesting system: ama-events-papi
+Responding system: ama-mq-sapi
+Request: {
+    "type": "incident",
+    "transaction_id": "a3f66130-f6c3-11ea-859c-12fbea1bb9b9",
+    "origin": "IOP",
+    "source": "IOP",
+    "operation": "insert",
+    "data": {
+        "assignment_group": {
+            "display_value": "TPX-RE-PLAT-ACCESSNET:NTL",
+            "value": "8379dcd9db5a53004b1a5623dc961986",
+            "group_id": "011554",
+            "area_id": "AT10017"
+        },
+        "cmdb_ci": {
+            "name": "MIAED02817",
+            "id": "23158f621b348010be6dea866e4bcb74"
+        },
+        "contact_type": "Monitoring",
+        "external_system_name": "",
+        "external_ticket_unique_id": "",
+        "number": "INC001677501",
+        "priority": "4",
+        "service_affect": "outage",
+        "severity": "4",
+        "short_description": "VCMTS_RPDOffline",
+        "state": "6",
+        "started": "2020-09-14T07:16:31",
+        "updated_fields": [
+            "u_triaged",
+            "upon_reject",
+            "u_is_parent",
+            "number",
+            "u_ptgw_resolving_partner",
+            "u_task",
+            "state",
+            "knowledge",
+            "cmdb_ci",
+            "impact",
+            "active",
+            "priority",
+            "u_number_url",
+            "short_description",
+            "u_total_potential_subcount",
+            "notify",
+            "u_primary_market",
+            "u_state_string",
+            "reassignment_count",
+            "escalation",
+            "upon_approval",
+            "u_started",
+            "made_sla",
+            "u_major_incident",
+            "child_incidents",
+            "opened_by",
+            "sys_domain",
+            "u_total_active_subcount",
+            "u_service_condition",
+            "business_service",
+            "u_symptom",
+            "opened_at",
+            "caller_id",
+            "u_triaged_new",
+            "u_detected_new",
+            "subcategory",
+            "work_notes",
+            "assignment_group",
+            "u_service_affect",
+            "description",
+            "u_source",
+            "u_total_affected_subcount",
+            "u_scope",
+            "contact_type",
+            "incident_state",
+            "urgency",
+            "severity",
+            "approval",
+            "reopen_count",
+            "u_owner_group",
+            "category"
+        ],
+        "source": "IOP",
+        "assigned_to": {
+            "name": "Evanios Service Account  (ev_agent-t)",
+            "id": "33459d406fb34300a83b2d232e3ee442"
+        },
+        "mitigated": "2020-09-14T07:21:38",
+        "submitter": {
+            "name": "Evanios Service Account  (ev_agent-t)",
+            "id": "33459d406fb34300a83b2d232e3ee442"
+        },
+        "outages": [
+            {
+                "cmdb_ci": {
+                    "name": "MIAED02817",
+                    "id": "23158f621b348010be6dea866e4bcb74"
+                },
+                "type": "outage",
+                "begin": "2020-09-14 07:16:31",
+                "end": "2020-09-14 07:37:30",
+                "sys_id": "1c5620381bdb90182d23beef034bcb2a",
+                "affected_system": [],
+                "affected_market": [],
+                "u_gl_code": "000118"
+            }
+        ]
+    }
+}
+Response: {
+    "success": true,
+    "transaction_id": "a3f66130-f6c3-11ea-859c-12fbea1bb9b9"
+}

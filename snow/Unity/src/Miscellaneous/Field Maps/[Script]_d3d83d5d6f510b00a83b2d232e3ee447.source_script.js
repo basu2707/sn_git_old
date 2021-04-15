@@ -1,0 +1,1 @@
+answer = source.short_description.toString().replace(/(?:\r\n|\r|\n)/g, '\n'); 

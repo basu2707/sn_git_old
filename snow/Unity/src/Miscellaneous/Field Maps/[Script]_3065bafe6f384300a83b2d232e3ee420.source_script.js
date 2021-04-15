@@ -1,0 +1,25 @@
+answer = (function transformEntry(source) {
+	
+	var id = 'NULL'; // Stores the sys_id of the matching record
+	var query = 'number=' + source.number;
+	// Check if the Source incident number matches with any in Servicenow
+	var rec = new GlideRecord('incident');
+	rec.addEncodedQuery(query);
+	rec.query();
+	if (rec.next()) {
+		id = rec.sys_id;
+	}
+	else if(source.external_ticket_unique_id != '' && source.external_system_name !='') 
+		{
+	// Check if the Source the external ticket ID and External system name matches with any in Servicenow
+		query ='correlation_id=' + source.external_ticket_unique_id + '^correlation_display=' + source.external_system_name;
+		var corid = new GlideRecord('incident');
+		corid.addEncodedQuery(query);
+		corid.query();
+		if (corid.next()) {
+			id = corid.sys_id;
+		}
+	}
+	return id;
+	
+})(source);

@@ -1,0 +1,176 @@
+New API for Problem : 
+ 		
+        API EndPoint : https://{ENV}/api/v1/problem/{number}?update_details=false
+        Method :         PATCH
+           Request PayLoad : 
+   
+ {
+    "details" : {            
+        "corelation_id"  : "Cox-ABC123456"
+    }
+ }
+
+Header: 
+  transaction_id : " " (REIS Correlation ID....)
+
+Response PayLoad :                 
+
+Scenario : SUCCESS
+
+ Http Response Code : 200
+ {
+    "update_status" : "success" ,
+    "problem": {
+            "number": "",
+            "details": {
+                "priority": "",
+                "impact": "",
+                "urgency": "",
+                "primary_service": "",
+                "primary_ci": "",
+                "category": "",
+                "sub_category": "",
+                "problem_type": "",
+                "problem_source": "",
+                "symptom": "",
+                "problem_statement": "",
+                "problem_description": "",
+                "state": "",
+                "primary_market": "",
+                "scope": "",
+                "assignment_group": "",
+                "assignment_to": "",
+                "first_reported_api": "",
+                "owner": "",
+                "impacted_partner": "",
+                "resolving_partner": "",
+                "external_system_integrated": "",
+                "correlation_id": ""
+            },
+            "analysis_information": {
+                "primary_known_error": "",
+                "rca_due_date": "",
+                "high_level_root_cause": "",
+                "cause_code": "",
+                "workaround": "",
+                "cause_notes": ""
+            },
+            "resolution_information": {
+                "change_request": "",
+                "fix_status": "",
+                "fix_version": "",
+                "target_fix_date": "",
+                "actual_fix_date": "",
+                "fix_notes": ""
+            },
+            "problem_review": {
+                "review_state": "",
+                "review_date": "",
+                "redundancy": "",
+                "third_party_involved": "",
+                "self_inflicted": "",
+                "report_carryover": "",
+                "business_area": "",
+                "sub_system": "",
+                "responsible_owner": "",
+                "parent": "",
+                "vertical": "",
+                "show_in_report": ""
+            },
+            "impact_assessment": {
+                "system_impact_description": "",
+                "customer_impact_description": "",
+                "care_tech_ops_impact_description": "",
+                "number_of_impacted_devices": "",
+                "number_of_impacted_accounts": "",
+                "number_of_impacted_technicians": ""
+            },
+            "other_information": {
+                "opened_by": "",
+                "resolved_by": "",
+                "problem_manager_group": "",
+                "problem_manager": "",
+                "parent_problem": "",
+                "updated_at": "",
+                "opened_at_date": "",
+                "resolved_at_date": "",
+                "duration": "",
+                "parent_task": "",
+                "is_parent": "TRUE/FALSE"
+            },
+            "notes": {
+                "comments": "",
+                "additional_comments": [
+                    {}
+                ],
+                "work_notes": [
+                    {
+                        "value": "",
+                        "posted_on": "",
+                        "posted_by_user_id": "",
+                        "posted_by_name": ""
+                    },
+                    {
+                        "value": "",
+                        "posted_on": "",
+                        "posted_by_user_id": "",
+                        "posted_by_name": ""
+                    }
+                ]
+            },
+            "association": {
+                "incidents": [
+                    {
+                        "number": "",
+                        "short_description": "",
+                        "state": "",
+                        "started_at": "",
+                        "opened_at": "",
+                        "resolved_at": "",
+                        "assigned_to": "",
+                        "correlation_id": ""
+                    }
+                ],
+                "problem_task": [
+                    {
+                        "number": "",
+                        "configuration_item": "",
+                        "priority": "",
+                        "state": "",
+                        "assignment_to": "",
+                        "short_description": "",
+                        "assigned_to": "",
+                        "order": ""
+                    }
+                ]
+            }
+        }
+ } 
+
+Scenario :  Problem Number Not Found
+
+ Http Response Code : 400
+ {
+     "success": false,
+     "transaction_id": correlationId,
+      "error": {
+      "error_code": "AMA-NOT-FOUND",
+      "error_desc": "Requested Resource Not Found",
+      "message": "error.description",
+	  "application": ""
+    }
+} 
+
+Scenario :  Error While Updating Correlation ID
+
+Http Response Code : 500
+ {
+     "success": false,
+     "transaction_id": correlationId,
+      "error": {
+      "error_code": "",
+      "error_desc": "",
+      "message": "",
+	  "application": ""
+    }
+}

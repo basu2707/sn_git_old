@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+<head>
+  <title>Hello World AngularJS application</title>
+</head>
+ 
+<body ng-app='app'>
+  <h1>Hello World AngularJS application</h1>
+  <section ng-controller="HelloController">
+    <h4>AngularJS Greeting</h4>
+    <label for="name">Type your name here:</label>
+    <input id=name type="text" ng-model="myModel">
+    <p>Hello {{myModel}}!</p>
+  </section>
+</body>
+ 
+<script src="node_modules/angular/angular.min.js"></script>
+<!-- <script src="app/app.module.js"></script> -->
+<script>
+(function () {
+ 
+ angular.module('app', [])
+   .controller('HelloController', HelloController);
+
+ HelloController.$inject = ['$scope'];
+
+ function HelloController($scope) {
+   $scope.myModel = 'World';
+ }
+
+})();
+</script>
+ 
+</html>

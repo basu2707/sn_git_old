@@ -1,0 +1,21 @@
+Option 1: BAU Flow
+    IOP posts updated fields and values to AMA
+    AMA does the GET API call to retrieve full incident details
+
+Option 2: New API
+    IOP will POST fields that are changed + used by AMA for driving business process
+    Changes are required on both IOP core and AMA side, 
+        refractoring of logic is required as there is a change in field names 
+
+Required Details:
+    List of fields that are required for "Incident" consumers 
+        - ex: who is consuming Incident details from AMA Kinesis stream
+        - What fields are required to be posted to Kinesis stream
+    Get estimates from SNOW & AMA for both  
+
+
+    Follow same naming convention and domain model in all Incident interaction between IOP (SNOW), Event Stream, AMA and End Consumers
+
+    consumer fields (10) + TTS bonding (10) + AMA business (10)
+
+

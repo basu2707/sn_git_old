@@ -1,0 +1,71 @@
+{
+    "header": {
+        "header_schema_version": "header:v1",
+        "data_schema_version": "remediation:update:v1",
+        "type": "remediation:create",
+        "event_id": "",
+        "create_time": "2020-06-29T12:01:31+00:00",
+        "origin": "remediation",
+        "origins_id": "",
+        "source": "2020-06-29T12:01:31+00:00",
+        "transaction_id": "e58a6a30-fdab-11ea-ba0b-122f5b8ad301",
+        "published_time": "2020-06-29T12:01:31+00:00",
+        "published_by": "REIS"
+    },
+    "data": {
+        "incident": {
+            "number": "INC001297257",
+            "symptom": "Application Issue - Detected",
+            "short_description": "DATAGUARD_APPLY_LAG",
+            "state": "2",
+            "cmdb_ci": "nwteqdb-ho-a1p.sys.comcast.net",
+            "submitter": "Evanios Service Account  (ev_agent-t)",
+            "contact_type": "monitoring",
+            "severity": "5",
+            "description": "Disconnect condition on Amdocs API to Versa.",
+            "subcategory": "Missing Advertisement(Lsa)",
+            "business_service": "Video (X1)",
+            "service_condition": "2",
+            "assignment_group": "TPX-RE-RP-ProdSupport_X1_Platform:NTL",
+            "transform_map": "Unity Incident Transform",
+            "table": "incident",
+            "display_name": "u_task",
+            "display_value": "INC001691244 - Sample Test",
+            "record_link": "https://comcasttest.service-now.com:443/api/now/table/incident/c83428fbdbdb5014690473e1ba961964",
+            "status": "inserted",
+            "sys_id": "c83428fbdbdb5014690473e1ba961964",
+            "Record_URL": "https://comcasttest.service-now.com/incident.do?sys_id=c83428fbdbdb5014690473e1ba961964&sysparm_stack=incident_list.do?sysparm_query=active=true",
+            "source": "IOP",
+            "sys_updated_on": "2020-09-23 14:49:00",
+            "priority": "5",
+            "opened_at": "2020-09-23 14:49:00",
+            "sys_updated_by": "ama_snow",
+            "resolving_partner": "Comcast",
+            "opened_by": "AMA ServiceNow (ama_snow)",
+            "caller_id": "AMA ServiceNow (ama_snow)",
+            "scope": "National",
+            "cmdbd_ci_sys_class_name": "Server",
+            "category": "Server",
+            "remediation": [
+                {
+                    "number": "REM0021492",
+                    "configuration_item": "nwteqdb-ho-a1p.sys.comcast.net",
+                    "type": "iop_remediation",
+                    "remediation_type": "remediation",
+                    "event": "EVNT158440894",
+                    "result": "partial_remediation",
+                    "result_type": "touchless",
+                    "workflow": "",
+                    "error": "connectivity",
+                    "state": "executing",
+                    "total_time": "0:0:0:0",
+                    "message": "The pod status is in if loop and the output is , Succeeded",
+                    "pre_remediation_assignment_group": "TPX-RE-EA-MON_APP:NTL",
+                    "post_remediation_assignment_group": "TPX-RE-EA-MON_APP:NTL",
+                    "event_attributes": "cnoc-dashboard_dotnet-core-3point1-sample,24.40.21.192,null",
+                    "exception": "Exception during remediation run"
+                }
+            ]
+        }
+    }
+}

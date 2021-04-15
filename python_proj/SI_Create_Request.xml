@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://xml.comcast.com/sams/tts/affectedelement/v1_11">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soapenv:mustUnderstand="1">
+         <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-47326016">
+            <wsse:Username>Watchtower_NCD</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">xxxx=</wsse:Password>
+            <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">ODE3MDUzMjc3Nw==</wsse:Nonce>
+            <wsu:Created>2018-11-12T20:31:58.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:create>
+         <v1:CreateAffectedElement>
+            <Header>
+               <Requester>Watchtower</Requester>
+               <Submitter>
+                  <Type>Remedy</Type>
+                  <Value>Watchtower</Value>
+               </Submitter>
+               <TimeStamp>
+                  <Date>2018-11-12</Date>
+                  <Time>20:31:58</Time>
+                  <TimeZone>UTC</TimeZone>
+               </TimeStamp>
+               <TransactionId>NationalWT-2018-11-1220:31:58</TransactionId>
+            </Header>
+            <Body>
+               <AffectedElement>
+                  <ActualStart>
+                     <Date>2018-11-12</Date>
+                     <Time>20:31:58</Time>
+                     <TimeZone>UTC</TimeZone>
+                  </ActualStart>
+                  <AffectedSubs>
+                     <Commercial>
+                        <HSD>5</HSD>
+                        <Video>2</Video>
+                        <Telephony>3</Telephony>
+                     </Commercial>
+                     <Residential>
+                        <HSD>0</HSD>
+                        <Video>0</Video>
+                        <Telephony>0</Telephony>
+                     </Residential>
+                  </AffectedSubs>
+                  <AttributeList>
+                     <Attribute>
+                        <Label>Soaking Outage</Label>
+                        <Value>True</Value>
+                     </Attribute>
+                     <Attribute>
+                        <Label>Customer Experience</Label>
+                        <Value>Customer Will Experience an Interruption of Video, HSD, and CDV Services</Value>
+                     </Attribute>
+                  </AttributeList>
+                  <ContactInformation>
+                     <Name>Watchtower</Name>
+                     <Phone>000.000.0000</Phone>
+                     <Email>Watchtower_DO_NOT_REPLY@cable.comcast.com</Email>
+                  </ContactInformation>
+                  <ElementName>PO76A</ElementName>
+                  <ElementType>Node, Partial</ElementType>
+                  <EstimatedTimeToResolve>
+                     <Date>2018-11-13</Date>
+                     <Time>00:31:58</Time>
+                     <TimeZone>GMT</TimeZone>
+                  </EstimatedTimeToResolve>
+                  <IndicatorCity>Portland</IndicatorCity>
+                  <IndicatorState>OR</IndicatorState>
+                  <NextAction>**Watchtower Soaking Outage</NextAction>
+                  <ProblemCode>10493</ProblemCode>
+                  <ServiceAffected>true</ServiceAffected>
+                  <Source>Watchtower</Source>
+                  <SourceReference>Watchtower</SourceReference>
+                  <SystemIdList>
+                     <SystemId>000761</SystemId>
+                  </SystemIdList>
+                  <WorklogList>
+                     <Worklog>
+                        <Subject>Text Data and-or Examples</Subject>
+                        <Details>Event [2327630754]
+EventType Outage
+Node: PO76A
+Plant Integrity: 1.0%
+CMTS: cbr22.beaverton.or.bverton.comcast.net%
+Slot(s): null%
+Downstream Port(s): 0
+Upstream Port(s): 2
+**Problem Info: Registration State
+**Affected Addresses:
+Total Video Subscribers Affected: 0 (2 Commercial)
+Total HSD Subscribers Affected: 0 (5 Commercial)
+Total CDV Subscribers Affected: 0 (3 Commercial)
+Total XHS Subscribers Affected: 0 (0 Commercial)
+Total Wifi Devices Affected: 0
+8778102114821967-832Sw 4th ave, 972042016 - Commercial Account
+8778102113642240-333Sw taylor stSte100, 972042446 - Commercial Account
+8778102114368282-333Sw taylor stSte150, 972042446 - Commercial Account
+8778102114323410-333Sw taylor stSte300, 972042446 - Commercial Account
+8778102113825688-333Sw taylor st, 972042446 - Commercial Account
+ 
+**Trouble Call Info:
+ 
+**Notes:</Details>
+                     </Worklog>
+                  </WorklogList>
+               </AffectedElement>
+            </Body>
+         </v1:CreateAffectedElement>
+      </v1:create>
+   </soapenv:Body>
+</soapenv:Envelope>

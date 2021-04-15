@@ -1,0 +1,26 @@
+{
+    "event_for": "incident",
+    "published_by": "IOP",
+    "data": {
+        "number": "INC002691170",
+        "updated_fields": [
+            "u_deflection_summary",
+            "activity_due"
+        ],
+        "source": "IOP",
+        "updates": {
+            "u_deflection_summary": "Pending",
+            "activity_due": "2020-04-22 04:38:25 PM"
+        },
+        "operation": "update",
+        "rule_details": {
+            "rule_actions": {
+                "xoc_support": false,
+                "tts_bonding": false
+            },
+            "rule_action_results": {
+                "aread_code": ""
+            }
+        }
+    }
+}

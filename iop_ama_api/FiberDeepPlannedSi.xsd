@@ -1,0 +1,104 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://xml.comcast.com/sams/tts/affectedelement/v1_11">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-44055794" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>Watchtower_NCD</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">z3izvDLWW+cmat7539pyiwIAlVE=</wsse:Password>
+                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MjA4NzgwMTMwMg==</wsse:Nonce>
+                <wsu:Created>2020-06-23T10:28:00.000Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:create>
+            <v1:CreateAffectedElement>
+                <Header>
+                    <Requester>Watchtower</Requester>
+                    <Submitter>
+                        <Type>Remedy</Type>
+                        <Value>Watchtower</Value>
+                    </Submitter>
+                    <TimeStamp>
+                        <Date>2020-06-23</Date>
+                        <Time>10:28:00</Time>
+                        <TimeZone>UTC</TimeZone>
+                    </TimeStamp>
+                    <TransactionId>593940498001631686194412410677</TransactionId>
+                </Header>
+                <Body>
+                    <AffectedElement>
+                        <PlannedStart>
+                            <Date>2020-06-23</Date>
+                            <Time>11:00:00</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </PlannedStart>
+                        <PlannedEnd>
+                            <Date>2020-06-23</Date>
+                            <Time>23:00:00</Time>
+                            <TimeZone>UTC</TimeZone>
+                        </PlannedEnd>
+                        <AffectedSubs>
+                            <Commercial>
+                                <HSD>0</HSD>
+                                <Video>0</Video>
+                                <Telephony>0</Telephony>
+                            </Commercial>
+                            <Residential>
+                                <HSD>0</HSD>
+                                <Video>0</Video>
+                                <Telephony>0</Telephony>
+                            </Residential>
+                        </AffectedSubs>
+                        <AttributeList>
+                            <Attribute>
+                                <Label>Customer Experience</Label>
+                                <Value>Customer Will Experience an Interruption of Video, HSD, and CDV Services</Value>
+                            </Attribute>
+                            <Attribute>
+                                <Label>Watchtower JB#</Label>
+                                <Value>32660410</Value>
+                            </Attribute>
+                        </AttributeList>
+                        <ContactInformation>
+                            <Name>Watchtower</Name>
+                            <Phone>000.000.0000</Phone>
+                            <Email>Watchtower_DO_NOT_REPLY@cable.comcast.com</Email>
+                        </ContactInformation>
+                        <ElementName>ATA1F00908</ElementName>
+                        <ElementType>Node, Partial</ElementType>
+                        <IndicatorCity>Atlanta</IndicatorCity>
+                        <IndicatorState>GA</IndicatorState>
+                        <NextAction>Open WT Job - Fiber Deep (FD)</NextAction>
+                        <ProblemCode>35035</ProblemCode>
+                        <ServiceAffected>true</ServiceAffected>
+                        <Source>Watchtower</Source>
+                        <SourceReference>Watchtower</SourceReference>
+                        <SystemIdList>
+                            <SystemId>000571</SystemId>
+                        </SystemIdList>
+                        <WorklogList>
+                            <Worklog>
+                                <Subject>Create Info</Subject>
+                                <Details>Job ID: JB32660410 Watchtower Live Link: https://nwds.g.comcast.net/?nodeid=1364736
+
+Task: Fiber Deep (FD)
+
+Element: Node ATA1F00908
+
+Current Impact Counts:
+
+Residential - Total Accts:0, Video:0, HSD:0, CDV:0, XHS:0
+
+Commercial - Total Accts:0, Video:0, HSD:0, CDV:0, XHS:0
+
+Last Log Entry:
+
+</Details>
+                            </Worklog>
+                        </WorklogList>
+                    </AffectedElement>
+                </Body>
+            </v1:CreateAffectedElement>
+        </v1:create>
+    </soapenv:Body>
+</soapenv:Envelope>

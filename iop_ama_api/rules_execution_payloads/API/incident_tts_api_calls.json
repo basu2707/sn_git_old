@@ -1,0 +1,168 @@
+Get Element type (look up)  
+https: //ama-tts-si-sapi-stage.us-e1.cloudhub.io/api/v1/elements/bulk-search?ticket_type=si
+Request: {
+    "element_name": [
+        "MIAED02817"
+    ]
+}
+
+Response: {
+    "success": true,
+    "transaction_id": "a50d9d90-f6c3-11ea-ad05-0ef7401f9bcb",
+    "data": {
+        "element_results": [
+            {
+                "element_name": "MIAED02817",
+                "element_type": "NODE_LEG"
+            }
+        ],
+        "element_error": []
+    }
+}
+
+
+Create SI 
+https: //tts-service-qa.u1.app.cloud.comcast.net/si/affectedelement
+Request: {
+    "createImpactScenario": "True",
+    "sourceReference": "INC001677501",
+    "elementName": "MIAED02817",
+    "elementType": "NODE_LEG",
+    "actualStart": "2020-09-14T07:16:31Z",
+    "outageSummary": "VCMTS_RPDOffline",
+    "affectedSub": [
+        {
+            "serviceName": "Video",
+            "serviceCondition": "Outage"
+        }
+    ],
+    "problemCode": "10493",
+    "nextAction": "**Watchtower Soaking Outage",
+    "siAttribute": {
+        "IOP_id": "INC001677501",
+        "Detected By": "Monitoring",
+        "Contact Info Department": "TPX-RE-PLAT-ACCESSNET:NTL",
+        "Outage Description": "VCMTS_RPDOffline",
+        "Soaking Outage": "True"
+    },
+    "severity": "Sev 4",
+    "overrideDupCheck": "false",
+    "source": "ServiceNow",
+    "systemId": [
+        "000118"
+    ],
+    "assignment": {},
+    "submitter": {
+        "type": "remedy",
+        "value": "ServiceNow"
+    }
+}
+
+Response: {
+    "messages": [
+        "Could not learn ARS User for submitter type='remedy' and value='ServiceNow' defaulting to XMLCSG",
+        "Executed impactor,  null",
+        "Created/Updated siAttribute for the label IOP_id",
+        "Created/Updated siAttribute for the label Detected By",
+        "Created/Updated siAttribute for the label Contact Info Department",
+        "Created/Updated siAttribute for the label Outage Description",
+        "Created attribute for the label Soaking Outage"
+    ],
+    "httpStatusCode": 200,
+    "status": "success",
+    "oeId": "OE008137130",
+    "siTicketId": "SI004689140"
+}
+
+Update Affected elements in TTS
+
+Request: {
+    "ticketId": "SI004689140",
+    "serviceName": "Video",
+    "serviceCondition": "Outage",
+    "affectedElementList": [
+        "OE008137130"
+    ],
+    "actualStart": 1600067791
+}
+
+Response: {
+    "responseInfo": {
+        "version": "1.1",
+        "httpCode": "200",
+        "transactionId": "fbd0b120-6c89-4f24-9e0b-70e0c6a5f427",
+        "responseCode": "0",
+        "responseStatus": "success",
+        "responseMessage": [
+            {
+                "success": [
+                    "Service is successfully updated for ticket Id SI004689140"
+                ]
+            }
+        ]
+    }
+}
+
+Update SI Details in Incident
+https: //ama-unity-sapi-test.us-e1.cloudhub.io/api/v1/inc
+Request: {
+    "number": "INC001677501",
+    "tts_ticket_id": "SI004689140",
+    "tts_status": "success",
+    "source": "TTS",
+    "external_systems_integrated": "Remedy TTS",
+    "u_tts_log": "AMA Transaction Id - a50d9d90-f6c3-11ea-ad05-0ef7401f9bcb\nSI004689140 Created in TTS",
+    "error_category": " ",
+    "u_tts_si_new_existing": "net new"
+}
+
+Response: {
+    "import_set": "ISET0039096",
+    "staging_table": "x_mcim_unified_incident",
+    "result": [
+        {
+            "transform_map": "Unity Incident Transform",
+            "table": "incident",
+            "display_name": "u_task",
+            "display_value": "INC001677501 - VCMTS_RPDOffline",
+            "record_link": "https://comcaststage.service-now.com:443/api/now/table/incident/1056ecf41bdb90182d23beef034bcbd5",
+            "status": "updated",
+            "sys_id": "1056ecf41bdb90182d23beef034bcbd5",
+            "integrated_systems": "aabe58576f460bc0a83b2d232e3ee4da,aabe58576f460bc0a83b2d232e3ee4da",
+            "short_description": "VCMTS_RPDOffline",
+            "close_code": "6",
+            "assignment_group": "TPX-RE-PLAT-ACCESSNET:NTL",
+            "description": "For RPD MIAED02817 - With MAC address 00:20:a3:28:67:8b has been off-line for at least 1 minute.",
+            "source": "IOP",
+            "sys_updated_on": "2020-09-14 19:51:27",
+            "solution_code": "Alarm Self Cleared",
+            "close_notes": "Event Monitoring Self Cleared",
+            "tts_status": "success",
+            "number": "INC001677501",
+            "resolved_by": "Evanios Service Account  (ev_agent-t)",
+            "sys_updated_by": "ama_snow",
+            "opened_by": "Evanios Service Account  (ev_agent-t)",
+            "scope": "National",
+            "state": "6",
+            "assigned_to": "Evanios Service Account  (ev_agent-t)",
+            "severity": "4",
+            "external_source_url": "https://tts-ticketviewer-v2-qa.u1.app.cloud.comcast.net/?ticketId=SI004689140",
+            "Record_URL": "https://comcaststage.service-now.com/incident.do?sys_id=1056ecf41bdb90182d23beef034bcbd5&sysparm_stack=incident_list.do?sysparm_query=active=true",
+            "cmdb_ci": "23158f621b348010be6dea866e4bcb74",
+            "business_service": "RDK",
+            "priority": "4",
+            "cause_code": "Network – Unknown",
+            "cmdb_ci_type": "Fiber Node",
+            "service_condition": "1",
+            "opened_at": "2020-09-14 07:16:31",
+            "symptom": "Whole Node Outage",
+            "resolving_partner": "Comcast",
+            "caller_id": "Evanios Service Account  (ev_agent-t)",
+            "resolved_at": "2020-09-14 07:37:30",
+            "cmdbd_ci_sys_class_name": "Endpoint",
+            "category": "HFC",
+            "subcategory": "Node",
+            "tts_ticket_id": "SI004689140"
+        }
+    ]
+}

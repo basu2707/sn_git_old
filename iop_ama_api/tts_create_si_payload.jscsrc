@@ -1,0 +1,113 @@
+{
+    "eventGUID": "5850cbe5-c547-4efe-ad78-1e5139e9aa48",
+    "eventKey": "083406482",
+    "eventName": "tts-si-create",
+    "creationTimeInMillis": "1593448303152",
+    "payload": {
+        "ticketId": "SI004526900",
+        "incidentScope": "National",
+        "created_at": "06/29/20 16:30:49 UTC",
+        "ETR": "06/29/20 20:31:01 UTC",
+        "nextAction": "INC001460105",
+        "serviceCondition": "HazCon",
+        "severity": "Sev 5",
+        "status": "Working",
+        "source": "ServiceNow",
+        "sourceReference": "INC001460105",
+        "modified": "06/29/20 16:31:02 UTC",
+        "alarmStart": "06/26/20 16:23:07 UTC",
+        "ttrstart": "06/29/20 16:31:01 UTC",
+        "assignment": {
+            "supportArea": "National Technical Operations",
+            "regionId": "AT1000",
+            "regionName": "NATIONAL",
+            "assignee": "ev_agent-t",
+            "queue": "Edge: Switch",
+            "queue_id": "006882",
+            "assignedDate": "06/29/20 16:31:01 UTC"
+        },
+        "categorization": {
+            "problem": {
+                "code": "10013",
+                "description": "Other",
+                "category": "Audit",
+                "subcategory": "Network Device"
+            }
+        },
+        "affectedElementList": {
+            "affectedElements": [
+                {
+                    "entryId": "OE007929726",
+                    "elementName": "hlbo-access-sbc01a-mgt1.hillsboro.or.ndchlsbr.comcast.net",
+                    "elementType": "Undefined",
+                    "status": "In Progress"
+                }
+            ]
+        },
+        "attributeList": {
+            "attributes": [
+                {
+                    "attrLabel": "IOP_id",
+                    "attrType": "Network",
+                    "attrValue": "INC001460105",
+                    "createDate": "06/29/20 16:31:00 UTC"
+                },
+                {
+                    "attrLabel": "Detected By",
+                    "attrType": "Network",
+                    "attrValue": "Monitoring",
+                    "createDate": "06/29/20 16:31:00 UTC"
+                },
+                {
+                    "attrLabel": "Contact Info Department",
+                    "attrType": "Network",
+                    "attrValue": "TPX-RE-PLAT-Voice:NTL",
+                    "createDate": "06/29/20 16:31:00 UTC"
+                },
+                {
+                    "attrLabel": "Outage Description",
+                    "attrType": "Network",
+                    "attrValue": "SONUS CP EVENT LOG ROLLOVER FAST",
+                    "createDate": "06/29/20 16:31:01 UTC"
+                },
+                {
+                    "attrLabel": "Customer Experience",
+                    "attrType": "Network",
+                    "attrValue": null,
+                    "createDate": "06/29/20 16:31:01 UTC"
+                },
+                {
+                    "attrLabel": "Contact Info Phone",
+                    "attrType": "Network",
+                    "attrValue": null,
+                    "createDate": "06/29/20 16:31:01 UTC"
+                },
+                {
+                    "attrLabel": "Indicator City",
+                    "attrType": "Network",
+                    "attrValue": null,
+                    "createDate": "06/29/20 16:31:01 UTC"
+                },
+                {
+                    "attrLabel": "Indicator State",
+                    "attrType": "Network",
+                    "attrValue": null,
+                    "createDate": "06/29/20 16:31:01 UTC"
+                },
+                {
+                    "attrLabel": "Management Bridge",
+                    "attrType": "Network",
+                    "attrValue": null,
+                    "createDate": "06/29/20 16:31:01 UTC"
+                },
+                {
+                    "attrLabel": "Technical Bridge",
+                    "attrType": "Network",
+                    "attrValue": null,
+                    "createDate": "06/29/20 16:31:01 UTC"
+                }
+            ]
+        }
+    },
+    "type": "tts-si-create"
+}

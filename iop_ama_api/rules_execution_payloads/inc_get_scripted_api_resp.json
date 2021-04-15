@@ -1,0 +1,261 @@
+{
+    "result":[
+       {
+          "affected_partners":{
+             "display_value":"Shaw",
+             "value":"81b8045137818300ba0694c543990e59"
+          },
+          "alarm_notes":[
+ 
+          ],
+          "assigned_to":{
+             "display_value":"Akul Patel (apatel718)",
+             "value":"3990086cdb5a4700f624fff31d961924",
+             "user_name":"apatel718"
+          },
+          "assignment_group":{
+             "display_value":"TPX-RE-RP-Syndication:NTL",
+             "value":"17d8a679dbebd704a3d5ef92ca961999",
+             "group_id":"",
+             "area_id":""
+          },
+          "business_service":{
+             "display_value":"xFi Syndication (Shaw)",
+             "value":"5b0c88511b1c3f048998620f6e4bcb14"
+          },
+          "caller_id":{
+             "display_value":"Partner Gateway (partner_gateway)",
+             "value":"cf892c213741c300ba0694c543990ebf",
+             "user_name":"partner_gateway"
+          },
+          "category":"",
+          "cause_code":{
+             "display_value":"Other",
+             "value":"8772d758db664740b52a3250ad9619d5",
+             "external_id":"240"
+          },
+          "caused_by":"",
+          "closed_at":"2019-06-28 04:00:05",
+          "closed_by":{
+             "display_value":"Akul Patel (apatel718)",
+             "value":"3990086cdb5a4700f624fff31d961924",
+             "user_name":"apatel718"
+          },
+          "close_code":"Solved (No Action Taken)",
+          "close_notes":"The issue has been mitigated - our CDN team and Openstack team are working on root cause for this issue. At this time we do not see any further issues with accessing the xFi web or phone app. We are resolving this incident. ",
+          "cmdb_ci":"",
+          "comments":[
+             {
+                "value":"Shaw (shaw) said:\n\"2019-05-24 10:08:20 - Tim Joseph (Vendor Notes) X1 Account ID: 3126453377807630576 Billing Account ID: XgzyR7Q2wc6sVrjK9N4J Account Source ID: cisco/XgzyR7Q2wc6sVrjK9N4J Account Tags: None tried access the app through xray - getting DNS issue tried access ing ti through internet.shaw.ca - getting DNS issue\"",
+                "posted_on":"2019-05-24 16:08:41",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw (shaw) said:\n\"2019-05-24 10:09:07 - Tim Joseph (Vendor Notes) 1 Impact Tier Which area(s) does it affect? 1 - Linear, DVR, VOD, Search, Streaming (on second screen apps), Voice Remote, 2 State of Experience How bad is it? (i.e.: Outage, degraded, not immediately customer impacting, etc.) 1 - Outage / service down 3 Judgement Factor Is it a major event / demo / high risk incidents? Is there sensitive timing / sensitivity of the occurrence? (To revenue / business / brand, etc.) Please note that term \"event\" refers to major Shaw events and is not indicative of event=incident 2 - No event 4 Exposure & Scale Is the exposure enterprise-wide / multi-market, single market, partial market, etc. Scale: did the incident occur within primetime? 1 - Enterprise / multi-market primetime 5 Customer Contact How has customer contact changed, including impact from call volume, tickets, day of install escalations, social media, and / or forum postings? 1 - Trending greater than 2x normal rates\"",
+                "posted_on":"2019-05-24 16:09:20",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw test account\r\n3126453377807630576\r\n\r\nXgzyR7Q2wc6sVrjK9N4J'",
+                "posted_on":"2019-05-24 16:14:40",
+                "posted_by_user_id":"apatel718",
+                "posted_by_name":"Akul Patel (apatel718)"
+             },
+             {
+                "value":"Shaw Team,\r\n\r\nWe are engaged our XREM team on this issue and we are already engaged the proper personal on our end to get this issue fixed",
+                "posted_on":"2019-05-24 16:21:57",
+                "posted_by_user_id":"apatel718",
+                "posted_by_name":"Akul Patel (apatel718)"
+             },
+             {
+                "value":"Cisco (shaw) said:\n\"VSS Current Status changed to: \nComcast to Investigate\"",
+                "posted_on":"2019-05-24 16:30:52",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw Team,\r\nWeb and Web View appear to be having issue - we are currently investigating and are working to get this resolved",
+                "posted_on":"2019-05-24 16:37:47",
+                "posted_by_user_id":"apatel718",
+                "posted_by_name":"Akul Patel (apatel718)"
+             },
+             {
+                "value":"Shaw (shaw) said:\n\"2019-05-24 10:55:27 - Tim Joseph (Vendor Notes) Please have comcast setup the appropriate records for cdn-tr-osch2c-01.cdn.comcast.net. which are referenced by their zone syn.comcast.net Thanks.\"",
+                "posted_on":"2019-05-24 16:55:58",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw (shaw) said:\n\"2019-05-24 11:10:32 - Tim Joseph (Vendor Notes) issue has been resolved, waiting for AAR from Comcast on root cause\"",
+                "posted_on":"2019-05-24 17:10:53",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw Team,\r\nImpacted customers about 165 based on one week of history\r\nThe issue has been mitigated - our CDN team and Openstack team are working on root cause for this issue. At this time we do not see any further issues with accessing the xFi web or phone app. We are resolving this incident. ",
+                "posted_on":"2019-05-24 17:17:36",
+                "posted_by_user_id":"apatel718",
+                "posted_by_name":"Akul Patel (apatel718)"
+             },
+             {
+                "value":"Cisco (shaw) said:\n\"05-24-2019 13:16:23 - Vijay Kumar Chowdary Gogineni (Additional comments)\nResolved:\n\nIncident resolved and AAR to be delivered via Problem Management:  Shaw PRB0048473/COM: TBA\"",
+                "posted_on":"2019-05-24 20:17:00",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Cisco (shaw) said:\n\"VSS Current Status changed to: \nResolved:\n\nIncident resolved and AAR to be delivered via Problem Management:  Shaw PRB0048473/COM: TBA\"",
+                "posted_on":"2019-05-24 20:17:01",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw (shaw) said:\n\"2019-05-28 08:51:24 - Tim Joseph (Vendor Notes) INC0574715 submitted for stuck SGT\"",
+                "posted_on":"2019-05-29 03:56:49",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             },
+             {
+                "value":"Shaw (shaw) said:\n\"2019-05-28 08:43:46 - Tim Joseph (Vendor Notes) INC0574715 submitted for stuck SGT\"",
+                "posted_on":"2019-05-29 03:56:50",
+                "posted_by_user_id":"partner_gateway",
+                "posted_by_name":"Partner Gateway (partner_gateway)"
+             }
+          ],
+          "contact_type":"Integration",
+          "description":"2019-05-24 10:07:15 - Tim Joseph (Vendor Notes) Unable to access the BlueCurve app via phone, Xray or internet.shaw.ca All of syn.comcast.net seems broken Eg, edge.si-shaw-prod-web.syn.comcast.net. edge.si-shaw-prod-webview.syn.comcast.net. Impact: All Functionality Opened at: 2019-05-24 16:07:35.0",
+          "external_system_name":"PTGW",
+          "external_ticket_unique_id":"shaw:INC0573451",
+          "external_source_url":"",
+          "impacted_subscribers":"",
+          "integrated_systems":{
+             "display_value":"Partner Gateway",
+             "value":"5d5b18d36f060bc0a83b2d232e3ee463"
+          },
+          "knowledge":"false",
+          "mitigated":"2019-05-24 17:19:41",
+          "number":"INC000724579",
+          "opened_at":"2019-05-24 16:07:35",
+          "opened_by":{
+             "display_value":"Partner Gateway (partner_gateway)",
+             "value":"cf892c213741c300ba0694c543990ebf",
+             "user_name":"partner_gateway"
+          },
+          "owner":{
+             "display_value":"Shaw",
+             "value":"81b8045137818300ba0694c543990e59"
+          },
+          "parent_incident":"",
+          "partner_urgency":"1",
+          "priority":"1",
+          "priority_restoral":null,
+          "problem_id":{
+             "display_value":"PRB000043659",
+             "value":"92d1c4401bbdb3448998620f6e4bcb00"
+          },
+          "resolved_at":"2019-05-24 17:20:06",
+          "resolved_by":{
+             "display_value":"Akul Patel (apatel718)",
+             "value":"3990086cdb5a4700f624fff31d961924",
+             "user_name":"apatel718"
+          },
+          "resolving_partner":{
+             "display_value":"Comcast",
+             "value":"7bc334ff37514700ba0694c543990e76"
+          },
+          "rfc":"",
+          "scope":"National",
+          "service_affect":"outage",
+          "service_condition":"2",
+          "severity":"1",
+          "severity_scale":"",
+          "short_description":"BlueCurve – Other – RadKSu2sDGv4QHI9r3qZ – Unable to access the BlueCurve app via phone, Xray or internet.shaw.ca",
+          "solution_code":{
+             "display_value":"Solution Unknown",
+             "value":"97736c59db9a53004b1a5623dc96194e",
+             "external_id":"8648"
+          },
+          "state":"7",
+          "started":"2019-05-24 15:45:35",
+          "subcategory":"",
+          "symptom":{
+             "display_value":"App not responding",
+             "value":"297f8b5ddbe69f80a3d5ef92ca961934",
+             "external_id":"IOP ONLY"
+          },
+          "sys_id":"115e63e2dbe17740fd193df33996192c",
+          "sys_updated_by":"system",
+          "sys_updated_on":"2019-06-28 04:00:05",
+          "triaged":"2019-05-24 17:09:12",
+          "tts_ticket_id":"",
+          "tts_status":null,
+          "watch_list":"Divya E (de565)",
+          "work_notes":[
+             {
+                "value":"As per IM assigning to XREM team to investigate further",
+                "posted_on":"2019-05-24 16:19:44",
+                "posted_by_user_id":"sdas465",
+                "posted_by_name":"Sarmistha Das (sdas465)"
+             },
+             {
+                "value":"starting 11:45 ET",
+                "posted_on":"2019-05-24 16:44:07",
+                "posted_by_user_id":"apatel718",
+                "posted_by_name":"Akul Patel (apatel718)"
+             }
+          ],
+          "work_notes_list":"",
+          "error_category":null,
+          "on_hold_reason":"",
+          "impacted_services":[
+             {
+                "cmdb_ci_service":"xFi Syndication (Shaw)",
+                "service_condition":"2",
+                "severity_scale":"",
+                "description":"",
+                "estimated_subcount":"",
+                "service_name":"xFi Syndication (Shaw)",
+                "service_class":"3rd Party",
+                "external_service_name":"",
+                "sys_id":"0e9a0c00dbbd7b00799ffd33399619ef",
+                "community":""
+             },
+             {
+                "cmdb_ci_service":"Video Syndication (Shaw)",
+                "service_condition":"2",
+                "severity_scale":"",
+                "description":"",
+                "estimated_subcount":"",
+                "service_name":"Video Syndication (Shaw)",
+                "service_class":"3rd Party",
+                "external_service_name":"Video",
+                "sys_id":"915ea3e2dbe17740fd193df3399619e3",
+                "community":""
+             }
+          ],
+          "affected_ci":[
+ 
+          ],
+          "outages":[
+ 
+          ],
+          "affected_account":[
+             {
+                "account":"Shaw",
+                "sys_id":"915ea3e2dbe17740fd193df3399619e4"
+             }
+          ],
+          "affected_market":{
+             "comcast_market":"National",
+             "system_id":[
+ 
+             ],
+             "market_id":[
+ 
+             ]
+          }
+       }
+    ]
+ }

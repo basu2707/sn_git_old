@@ -1,0 +1,2 @@
+1. When "Resolution Information" tab appears, list of incidents are shown at the bottom of the tab
+2. I don't see "comments" field before "problem review" tab

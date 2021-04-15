@@ -1,0 +1,41 @@
+{
+    "files.exclude": {
+        "*/system": true,
+        "system" : true,
+        "node_modules": true,
+        ".vscode": true,
+        "lib": true,
+        "tsconfig.json": true
+    },
+    "search.exclude": {
+        "*/system": true
+    },
+    "css.lint.emptyRules": "ignore",
+    "html.customData": [
+        "./lib/data/jelly_schema.json"
+    ],
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#145b4b",
+        "statusBar.foreground": "#e7e7e7",
+        "activityBar.background": "#1d856d",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.activeBackground": "#1d856d",
+        "activityBar.activeBorder": "#d596e8",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#d596e8",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#1d856d",
+        "titleBar.activeBackground": "#145b4b",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#145b4b99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "now.instance.authentication.type": "Basic",
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "now.instance.user.name": "bveliv410",
+    "now.instance.host.url": "https://comcastteamdev3.service-now.com",
+    "now.instance.OAuth.client.id": "",
+    "now.instance.user.password": "••••••••",
+    "now.instance.OAuth.client.secret": "",
+    "peacock.color": "#145b4b"
+}

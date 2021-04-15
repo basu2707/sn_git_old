@@ -1,0 +1,49 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://xml.comcast.com/sams/tts/networkticket/v1_4">
+    <soapenv:Header>
+        <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-28302630" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>Watchtower_NCD</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">xxxxx=</wsse:Password>
+                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">NTY1ODIyOTc4Mw==</wsse:Nonce>
+                <wsu:Created>2018-11-12T20:42:05.000Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:update>
+            <v1:UpdateNetworkTicket>
+                <Header>
+                    <Requester>Watchtower</Requester>
+                    <Submitter>
+                        <Type>Remedy</Type>
+                        <Value>Watchtower</Value>
+                    </Submitter>
+                    <TimeStamp>
+                        <Date>2018-11-12</Date>
+                        <Time>20:42:05</Time>
+                        <TimeZone>UTC</TimeZone>
+                    </TimeStamp>
+                    <TransactionId>NationalWT-2018-11-1220:42:05</TransactionId>
+                </Header>
+                <Body>
+                    <NetworkTicket>
+                        <AttributeList>
+                            <Attribute>
+                                <Label>Soaking Outage</Label>
+                                <Value>False</Value>
+                            </Attribute>
+                        </AttributeList>
+                        <NextAction>**Watchtower Confirmed Outage</NextAction>
+                        <TicketId>SI031166440</TicketId>
+                        <WorklogList>
+                            <Worklog>
+                                <Subject>WT Update</Subject>
+                                <Details>Watchtower Outage Event [2327630754] has gone from Soaking to Confirmed.</Details>
+                            </Worklog>
+                        </WorklogList>
+                    </NetworkTicket>
+                </Body>
+            </v1:UpdateNetworkTicket>
+        </v1:update>
+    </soapenv:Body>
+</soapenv:Envelope>

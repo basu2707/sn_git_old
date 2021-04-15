@@ -1,0 +1,12 @@
+{
+    "name":"incident",
+    "level":20,
+    "msg":"AMA Options {\"url\":\"/api/v1/incident-tickets\",\"baseURL\":\"https://ama-stage.cm.comcast.net/\",\"port\":443,\"data\":{\"inc_manager_group\":\"TPX-CCS-PSP-SecAuth&AccessMgmt:NTL\",\"severity\":5,\"description\":\"filesystem is nearly full and exceeded 95 for ipa-as-02p.ipacomcast.com for path: /var\",\"short_description\":\"filesystem\",\"cmdb_ci\":\"b42cac5e1b5cd89097a2ebde6e4bcb2c\",\"assignment_group\":\"TPX-CCS-PSP-SecAuth&AccessMgmt:NTL\",\"work_notes\":\"Event: CE3433973 TraceId: v1-e7946820696c26086558c7174dec6d83 [code]<a href=\\\"https://event.kaleidoscopestage.comcast.com/eventDetails?traceId=v1-e7946820696c26086558c7174dec6d83\\\">Event Details</a>[code]\"},\"method\":\"POST\",\"timeout\":25000,\"headers\":{\"Content-Type\":\"application/json\",\"client_id\":\"6b7fd4fe83184235bfbc28b942848c38\",\"client_secret\":\"7A01Fc374E614Cb3b4b7BFFe4623e9AD\"}}",
+    "time":"2020-11-06T13:57:40.421Z",
+    "src":{
+       "file":"/var/task/createIncident.js",
+       "line":47503,
+       "func":"module.exports.create"
+    },
+    "v":0
+ }

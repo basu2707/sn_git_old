@@ -1,0 +1,59 @@
+{
+    "affectedElement": {
+        "entryId": "OE001088140",
+        "actualStart": "2016-06-15 12:30:00",
+        "etr": "2016-07-15 10:00:39"
+    },
+    "message": "Success!",
+    "code": "200",
+    "correlationSummary": [
+        {
+            "summaryId": "COS21506337",
+            "ciType": "CMTS",
+            "correlationCategory": "XRE_DVR",
+            "criticalThreshold": 7,
+            "currentCount": 0,
+            "description": "CMTS=cdn01.villages.fl.lakecnty.comcast.net",
+            "elementName": "cdn01.villages.fl.lakecnty.comcast.net",
+            "parentId": "OE001088140",
+            "sourceTicket": "SI000067502",
+            "status": 4
+        },
+        {
+            "summaryId": "COS21506314",
+            "ciType": "CMTS",
+            "correlationCategory": "XRE_DVR",
+            "criticalThreshold": 7,
+            "currentCount": 0,
+            "description": "CMTS=cdn02.mtdora.fl.lakecnty.comcast.net",
+            "elementName": "cdn02.mtdora.fl.lakecnty.comcast.net",
+            "parentId": "OE001088140",
+            "sourceTicket": "SI000067502",
+            "status": 4
+        },
+        {
+            "summaryId": "COS21506338",
+            "ciType": "CMTS",
+            "correlationCategory": "XRE_DVR",
+            "criticalThreshold": 7,
+            "currentCount": 0,
+            "description": "CMTS=cdn01.villages.fl.lakecnty.comcast.net",
+            "elementName": "cdn01.villages.fl.lakecnty.comcast.net",
+            "parentId": "OE001088140",
+            "sourceTicket": "SI000067502",
+            "status": 4
+        },
+        {
+            "summaryId": "COS21506313",
+            "ciType": "CMTS",
+            "correlationCategory": "XRE_DVR",
+            "criticalThreshold": 7,
+            "currentCount": 0,
+            "description": "CMTS=cdn02.mtdora.fl.lakecnty.comcast.net",
+            "elementName": "cdn02.mtdora.fl.lakecnty.comcast.net",
+            "parentId": "OE001088140",
+            "sourceTicket": "SI000067502",
+            "status": 4
+        }
+    ]
+}

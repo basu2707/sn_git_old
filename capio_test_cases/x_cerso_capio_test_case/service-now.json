@@ -1,0 +1,27 @@
+{
+    "grouped": true,
+    "display": "name",
+    "table": "x_cerso_capio_test_case",
+    "fields": [
+        {
+            "name": "data",
+            "field": "data",
+            "extension": "csv"
+        },
+        {
+            "name": "script",
+            "field": "script",
+            "extension": "js"
+        },
+        {
+            "name": "on_before",
+            "field": "on_before",
+            "extension": "js"
+        },
+        {
+            "name": "on_after",
+            "field": "on_after",
+            "extension": "js"
+        }
+    ]
+}

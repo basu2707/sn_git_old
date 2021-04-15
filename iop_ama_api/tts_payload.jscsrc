@@ -1,0 +1,68 @@
+//SI Updates
+{
+    "type": "si_update_status",
+    "ticketId": "SI004508520",
+    "parentId": "",
+    "status": "Linked",
+    "source": "ServiceNow",
+    "sourceReference": "**Watchtower Soaking Outage",
+    "IOPid": "",
+    "problemCode": "10493",
+    "causeCode": "NA",
+    "solutionCode": "NA",
+    "affectedElementList": {
+        "affectedElements": [
+            {
+                "entryId": "OE007907896",
+                "elementName": "FLORDHC301",
+                "elementType": "Node Leg",
+                "status": "Cancelled",
+                "actualStart": "06/11/20 16:53:32 UTC",
+                "actualEnd": "NA",
+                "causeCode": "NA",
+                "solutionCode": "NA"
+            }
+        ]
+    }
+}
+
+//Child SI deflection OE cancellation
+{
+    "ciIdentifier": "OE1",
+    "elementName": "FLORDHC301",
+    "ticketId": "SI1",
+    "ciType": "NODE",
+    "iopId": "INC1",
+    "source": "Watchtower",
+    "sourceReference": "Watchtower",
+    "deflectionStatus": "inactive",
+    "timestampMs": 1588892558199,
+    "parentId": "SI4",
+    "affectedElementList": {
+        "affectedElements": [
+            {
+                "entryId": "OE5",
+                "elementName": "FLORDHC301",
+                "elementType": "Node Leg",
+                "status": "active",
+                "actualStart": "06/11/20 16:53:32 UTC",
+                "actualEnd": "NA",
+                "causeCode": "NA",
+                "solutionCode": "NA"
+            }
+        ]
+    }
+}
+//Parent SI deflection 
+{
+    "ciIdentifier": "OE5",
+    "elementName": "HR09",
+    "ticketId": "SI4",
+    "ciType": "NODE",
+    "iopId": "INC4",
+    "source": "Watchtower",
+    "sourceReference": "Watchtower",
+    "deflectionStatus": "active",
+    "timestampMs": 1588892558199,
+    "parentId": ""
+}
